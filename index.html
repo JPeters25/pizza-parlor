@@ -36,11 +36,12 @@
       </div>
     </div> 
     <div class="toppings-menu">
-    <form id="toppings">
+    <form id="toppingsChoice">
     <div class="row">
       <div class="col-md-6"> 
-      <h5>Pick your protein</h5>
-       
+        <h5>Pick your protein</h5>
+        <div class="meatForm">
+          <div class="meat">
           <input type="checkbox" id="pepperoni" name="protein" value="pepperoni">
           <label for="pepperoni"> Pepperoni</label><br>
           <input type="checkbox" id="sausage" name="protein" value="sausage">
@@ -49,9 +50,12 @@
           <label for="bacon"> Bacon</label><br>
           <input type="checkbox" id="chicken" name="protein" value="chicken">
           <label for="Chicken"> Chicken</label><br>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
         <h5>Pick your veggies</h5>
+          <div class="veggies">
           <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
           <label for="mushrooms"> Mushrooms</label><br>
           <input type="checkbox" id="onion" name="veggies" value="onion">
@@ -60,6 +64,7 @@
           <label for="olives"> Olives</label><br>
           <input type="checkbox" id="cashews" name="veggies" value="cashews">
           <label for="cashews"> Cashews</label><br>
+          </div>
       </div>
     </div>
     </form>
@@ -75,8 +80,19 @@
       </select>
     </form>
     <br>
-    <button type="submit">Submit Order!</button>
+    <button type="submit" class="btn-primary" id="submit-order">Submit Order!</button>
   </div>
+</div>
+
+<div class="order-summary">
+  <h5>Your Order Summary</h5>
+  <p>Your order:</p>
+    <p>Size: <span id=size></span></p>
+    <p>Meats: <span id=meats></span></p>
+    <p>Veggies: <span id=veggies></span></p>
+    <p>Side: <span id=side></span></p>
+    <p>Your Total is: $<span id="total-price"></span>
+      <p>Thanks for chosing Alfredo's Pizza Cafe!</p>
 </div>
 </body>
 </html>

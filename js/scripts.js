@@ -1,22 +1,57 @@
-//Business Logic for Contact-----------------------------
+//Business Logic for Pizza-----------------------------
 
-function OrderBook() {
-  this.Pizza = {};
-  this.contacts = {};
-  this.orderId = 0;
+function Pizza(size, toppings) {
+  this.size = {};
+  this.toppings = [];
+}
+
+let newPizza = new Pizza(0,0);
+
+function Size() {
+  if(document.getElementById('small').checked) {
+  return "Small"
+  } else if (document.getElementById('medium').checked) {
+    return "Medium"
+  } else if (document.getElementById('large').checked) {
+    return "Large"
+  } else {
+    return alert("Please Select a Size!");
+  }
+}
+
+function Meat() {
+  if(document.getElementById('pepperoni').checked) {
+    return ("Pepperoni");
+  } else if(document.getElementById('sausage').checked){
+    return ("Sausage");
+  } else if(document.getElementById('bacon').checked) {
+    return ("Bacon");
+  } else if(document.getElementById('chicken').checked){
+    return ("Chicken");
+  } 
+  else {
+    return "none"
+  }
+}
+
+function Veggies() {
+  if(document.getElementById('mushrooms').checked) {
+    return ("Mushrooms");
+  } else if(document.getElementById('onion').checked){
+    return("Onion");
+  } else if(document.getElementById('olives').checked){
+    return("Olives");
+  } else if(document.getElementById('cashews').checked){
+    return("Cashews");
+  } 
+  else {
+    return "none"
+  }
 }
 
 
-function Pizza(topping1, topping2, size) {
-  this.topping1 = topping1;
-  this.topping2 = topping2;
-  this.size = size;
-}
 
-Pizza.prototype.pizzaChoice = function () {
-  return this.topping1 + this.secondtopping + this.size;
-}
-
+ 
 
 
 
@@ -42,6 +77,16 @@ Pizza.prototype.pizzaChoice = function () {
 // }
 
 //User Interface Logic---------------------------------------
+$(document).ready(function(){
+  $("button#submit-order").click(function(event){
+    event.preventDefault();
+    $("#size").html(Size);
+    $("#meats").html(Meat);
+    $("#veggies").html(Veggies);
+    $(".order-summary").show();
+  })
+})
+
 
 
 
@@ -70,17 +115,6 @@ Pizza.prototype.pizzaChoice = function () {
 
 
 // let userOrder = new OrderBook();
-
-
-
-// function confirmContact() {
-//   const contact = userOrder.findContact(contactId);
-//   $("#contact-confrim").show();
-//   $(".first-name").html(contact.firstName);
-//   $(".last-name").html(contact.lastName);
-//   $(".phone-number").html(contact.phoneNumber);
-//   $(".address").html(contact.Address);
-// }
 
 // $(document).ready(function() {
 //   $("form#UserInfo").submit(function(event){
