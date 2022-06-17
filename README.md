@@ -1,7 +1,7 @@
 Descirbe: Order()
 
 Test: "It should return the Pizza object with 2 properties for topping and size"
-Code: let myOrder = new Pizza ("pepperoni","bacon","large")
+Code: let myOrder = new Pizza("pepperoni","bacon","large")
 Expected Output: Pizza  {topping1:"pepperoni", topping2: "bacon", size: "large",}
 
 Decribe: Pizza()
