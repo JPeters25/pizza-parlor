@@ -8,11 +8,82 @@
   <title>Alfredo's Pizza Cafe!</title>
 </head>
 <body>
-  <div class="header">
-    <h1>Alfredo's Pizza Cafe</h1>
-    <p>"Better than Pizza by Alfredo!</p>
+<div class="container">
+  <div class= "row">
+    <div class=" col-12">
+      <div class="jumbotron">
+      <h1>Alfredo's Pizza Cafe</h1>
+      <blockquote class="blockquote">
+      <p>"Way better than Pizza by Alfredo!"</p>
+      <footer class="blockquote-footer">The entire staff at Dunder Mifflin Scranton</footer>
+      </blockquote>
+      </div>
+    </div>
   </div>
-  <div class="UserInfo">
+  <div class="pizzamaker">
+  <h3>Create Your Pizza!</h3>
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title">Size</h2>
+        <form id="sizes">
+          <input type="radio" id="small" name="size" value="small">
+          <label for="small"> Small (10")</label><br>
+          <input type="radio" id="medium" name="size" value="medium">
+          <label for="medium"> Medium (14")</label><br>
+          <input type="radio" id="large" name="size" value="large">
+          <label for="large"> Large (18")</label><br>
+        </form>
+      </div>
+    </div> 
+    <div class="toppings-menu">
+    <form id="toppings">
+    <div class="row">
+      <div class="col-md-6"> 
+      <h5>Pick your protein</h5>
+       
+          <input type="checkbox" id="pepperoni" name="protein" value="pepperoni">
+          <label for="pepperoni"> Pepperoni</label><br>
+          <input type="checkbox" id="sausage" name="protein" value="sausage">
+          <label for="sausage"> sausage</label><br>
+          <input type="checkbox" id="bacon" name="protein" value="bacon">
+          <label for="bacon"> Bacon</label><br>
+          <input type="checkbox" id="chicken" name="protein" value="chicken">
+          <label for="Chicken"> Chicken</label><br>
+      </div>
+      <div class="col-md-6">
+        <h5>Pick your veggies</h5>
+          <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
+          <label for="mushrooms"> Mushrooms</label><br>
+          <input type="checkbox" id="onion" name="veggies" value="onion">
+          <label for="onion"> Onion</label><br>
+          <input type="checkbox" id="olives" name="veggies" value="olives">
+          <label for="olives"> Olives</label><br>
+          <input type="checkbox" id="cashews" name="veggies" value="cashews">
+          <label for="cashews"> Cashews</label><br>
+      </div>
+    </div>
+    </form>
+    </div>
+    <br>
+    <form id="sides">
+      <h5>Select a Side!</h5>
+      <select class="form-control-md" id="side">
+        <option>BBQ Wings</option>
+        <option>Salad</option>
+        <option>Breadsticks</option>
+        <option>No side</option>
+      </select>
+    </form>
+    <br>
+    <button type="submit">Submit Order!</button>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+ <!-- <div class="UserInfo">
     <h3>Please enter the following information below</h3>
     <form id="UserInfo">
       <label for="first-name">First Name:</label>
@@ -26,45 +97,16 @@
       <br>
       <label for="address">Delivery Address:</label>
       <input type="text" id="address">
+      <br>
+      <button type="submit">Submit Delivery Info!</button>
     </form>
     <br>
+    <div id="contact-confirm">
+      <h4>Verify Contact info</h4>
+      <p><span class="first-name"></span></p>
+      <p><span class="last-name"></span></p>
+      <p><span class="phone-number"></span></p>
+      <p><span class="address"></span></p>
+    </div>
   </div>
-  <button type="start">Start Pizza!</button>
-  <div class="pizzamaker">
-    <h3>Create Your Pizza!</h3>
-    <h4>Size</h4>
-    <br>
-    <form id="sizes">
-      <input type="checkbox" id="small" name="size" value="small">
-      <label for="small"> Small (10")</label><br>
-      <input type="checkbox" id="medium" name="size" value="medium">
-      <label for="medium"> Medium (14")</label><br>
-      <input type="checkbox" id="large" name="size" value="large">
-      <label for="large"> Large (18")</label><br>
-    </form>
-    <h5>Pick your protein</h5>
-    <form id="toppings">
-      <input type="checkbox" id="pepperoni" name="protein" value="pepperoni">
-      <label for="pepperoni"> Pepperoni</label><br>
-      <input type="checkbox" id="sausage" name="protein" value="sausage">
-      <label for="sausage"> sausage</label><br>
-      <input type="checkbox" id="bacon" name="protein" value="bacon">
-      <label for="bacon"> Bacon</label><br>
-      <input type="checkbox" id="chicken" name="protein" value="chicken">
-      <label for="Chicken"> Chicken</label><br>
-
-    <h5>Pick your veggies</h5>
-      <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
-      <label for="mushrooms"> Mushrooms</label><br>
-      <input type="checkbox" id="onion" name="veggies" value="onion">
-      <label for="onion"> Onion</label><br>
-      <input type="checkbox" id="olives" name="veggies" value="olives">
-      <label for="olives"> Olives</label><br>
-      <input type="checkbox" id="cashews" name="veggies" value="cashews">
-      <label for="cashews"> Cashews</label><br>
-    </form>
-    <br>
-    <button type="submit">Submit Order!</button>
-  </div>
-</body>
-</html>
+  <button type="start">Start Pizza!</button> -->
