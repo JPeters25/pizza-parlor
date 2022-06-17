@@ -1,3 +1,24 @@
+# _Alfredo's Pizza Cafe_
+
+#### By _**Justin Peters**_
+
+#### This browser application will allow a user to select the size of pizza and toppings to see a price
+
+## Technologies Used
+
+* HTML
+* CSS
+* Markdown
+* Bootstrap
+* JavaScript
+* JQuery
+
+## Description
+
+_This browser application allows the user to select a pizza size, toppings of choice, and side and return a order summary and price based off their selection._
+
+## Tests
+
 Descirbe: Order()
 
 Test: "It should return the Pizza object with 2 properties for topping and size"
@@ -10,8 +31,18 @@ Test:"It should return a Pizza object with two properties for toppings and size"
 Code: new Pizza("pepperoni", "sausage", "medium")
 Expected Output: Pizza { topping1:"pepperoni", topping2: "sausage",], size: medium}
 
-Describe: Contact()
+## Setup/Installation Requirements
 
-Test: "It should return users first and last name, phone number and order address"
-Code: let Mike = new Contact("Michael", "Scott", "555-5555"," Dunder Mifflin, 1725 Slough Avenue")
-Expected Output: Contact {firstName: 'Michael', lastName: 'Scott', phoneNumber: '555-5555', address: ' Dunder Mifflin, 1725 Slough Avenue'}
+* _Clone repository from GitHub_
+* _Open index.html file_
+
+
+## Known Bugs
+
+* Price is not displaying for pizza size, toppings or side. 
+
+## License
+
+_MIT_
+
+Copyright (c)Justin Peterss)_
