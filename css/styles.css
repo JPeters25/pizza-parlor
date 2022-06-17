@@ -1,9 +1,18 @@
+body {
+  background-image: url("https://www.itscapitolpizza.com/wp-content/uploads/2016/08/6703462-abstract-red-and-white-checkered-background.jpg")
+}
+
 .order-summary{
   display: none;
+  margin-left: 500px;
+  margin-top: 75px;
+  background-color: white;
+  width: 800px;
+  
 }
 
 .container {
-  margin-left: 100px;
+  margin-left: 300px;
 }
 
 .jumbotron {
@@ -12,4 +21,24 @@
 
 .pizzamaker{
   text-align: center;
+  background-color: white;
+}
+.sum-header{
+  font-weight: bold;
+  padding-left: 25px;
+}
+#logo{
+  text-align: center;
+}
+
+#summary{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#thank-you{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
 }

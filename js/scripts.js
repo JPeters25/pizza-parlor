@@ -49,9 +49,26 @@ function Veggies() {
   }
 }
 
+//Business Logic for Price-------------------------------------
+
 
 
  
+
+
+
+
+//User Interface Logic---------------------------------------
+$(document).ready(function(){
+  $("button#submit-order").click(function(event){
+    event.preventDefault();
+    $("#size").html(Size);
+    $("#meats").html(Meat);
+    $("#veggies").html(Veggies);
+    $(".order-summary").show();
+  })
+})
+
 
 
 
@@ -76,16 +93,6 @@ function Veggies() {
 //   return this.currentId;
 // }
 
-//User Interface Logic---------------------------------------
-$(document).ready(function(){
-  $("button#submit-order").click(function(event){
-    event.preventDefault();
-    $("#size").html(Size);
-    $("#meats").html(Meat);
-    $("#veggies").html(Veggies);
-    $(".order-summary").show();
-  })
-})
 
 
 
@@ -109,30 +116,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-// let userOrder = new OrderBook();
-
-// $(document).ready(function() {
-//   $("form#UserInfo").submit(function(event){
-//   event.preventDefault();
-//   let inputtedFirstName = $("input#first-name").val();
-//   let inputtedLastName = $("input#last-name").val();
-//   let inputtedPhoneNumber = $("input#phone-number").val();
-//   let inputtedAddress= $("input#address").val();
-
-//   $("input#first-name").val("");
-//   $("input#last-name").val("");
-//   $("input#phone-number").val("");
-//   $("input#address").val("")
-
-//   let newOrder = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedAddress)
-//   OrderBook.addContact(newContact);
-//   })
-// })
 
 
 
