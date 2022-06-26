@@ -18,11 +18,11 @@
       <p>"Way better than Pizza by Alfredo!"</p>
       <footer class="blockquote-footer">The entire staff at Dunder Mifflin Scranton</footer>
       </blockquote>
-      
       </div>
     </div>
   </div>
-  <div class="pizzamaker">
+</div>
+<div class="pizzamaker">
   <h3>Create Your Pizza!</h3>
     <div class="card">
         <div class="card-body">
@@ -35,12 +35,11 @@
           <input type="radio" id="large" name="size" value="large">
           <label for="large"> Large (18")</label><br>
         </form>
-      </div>
-    </div> 
+        </div>
     <div class="toppings-menu">
     <form id="toppingsChoice">
     <div class="row">
-      <div class="col-md-6"> 
+      <div class="col-md-4"> 
         <h5>Pick your protein</h5>
         <div class="meatForm">
           <div class="meat">
@@ -52,10 +51,12 @@
           <label for="bacon"> Bacon</label><br>
           <input type="checkbox" id="chicken" name="protein" value="chicken">
           <label for="Chicken"> Chicken</label><br>
+          <input type="checkbox" id="noMeat" name="protein" value="noMeat">
+          <label for="noMeat"> None</label><br>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <h5>Pick your veggies</h5>
           <div class="veggies">
           <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
@@ -66,34 +67,38 @@
           <label for="olives"> Olives</label><br>
           <input type="checkbox" id="cashews" name="veggies" value="cashews">
           <label for="cashews"> Cashews</label><br>
+          <input type="checkbox" id="no-Veg" name="veggies" value="no-Veg">
+          <label for="no-Veg"> None</label><br>
           </div>
       </div>
-    </div>
+      <div class="col-md-4">
+        <h5>Pick your Side</h5>
+          <div class="side-selection">
+          <input type="checkbox" id="wings" name="sides" value="wings">
+          <label for="wings"> 6 pc BBQ Wings</label><br>
+          <input type="checkbox" id="salad" name="sides" value="salad">
+          <label for="salad"> House Salad</label><br>
+          <input type="checkbox" id="breadsticks" name="sides" value="breadsticks">
+          <label for="breadsticks">6 pc Breadsticks</label><br>
+          <input type="checkbox" id="no-side" name="sides" value="no-side">
+          <label for="no-side">No side </label><br>
+          </div>
+      </div>
     </form>
     </div>
-    <br>
-    <form id="sides">
-      <h5>Select a Side!</h5>
-      <select class="form-control-md" id="side">
-        <option>BBQ Wings</option>
-        <option>Salad</option>
-        <option>Breadsticks</option>
-        <option>No side</option>
-      </select>
-    </form>
-    <br>
     <button type="submit" class="btn-primary" id="submit-order">Submit Order!</button>
   </div>
 </div>
-
-<div class="order-summary">
-  <h5 id="summary">Your Order Summary</h5>
-    <p class=sum-header>Size: <span id=size></span></p>
-    <p class=sum-header>Meats: <span id=meats></span></p>
-    <p class=sum-header>Veggies: <span id=veggies></span></p>
-    <p class=sum-header>Side: <span id=side></span></p>
-    <p class=sum-header>Your Total is: $<span id="total-price"></span>
+<div class="col-md-12">
+  <div class="order-summary">
+    <h5 id="summary">Your Order Summary</h5>
+      <p class=sum-header>Size: <span id=size></span></p>
+      <p class=sum-header>Meats: <span id=meats></span></p>
+      <p class=sum-header>Veggies: <span id=veggies></span></p>
+      <p class=sum-header>Side: <span id=selected-side></span></p>
+      <p class=sum-header>Your Total is: $<span id="total-price"></span>
       <p id="thank-you">Thanks for chosing Alfredo's Pizza Cafe!</p>
+  </div>
 </div>
 </body>
 </html>

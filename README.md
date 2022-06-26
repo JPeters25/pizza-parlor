@@ -39,7 +39,7 @@ Expected Output: Pizza { topping1:"pepperoni", topping2: "sausage",], size: medi
 
 ## Known Bugs
 
-* Price is not displaying for pizza size, toppings or side. 
+* Price only displays if you select one of each topping and or side selection
 
 ## License
 

@@ -4,16 +4,14 @@ body {
 
 .order-summary{
   display: none;
-  margin-left: 500px;
+  margin-left: 550px;
   margin-top: 75px;
+  margin-bottom: 100px;
   background-color: white;
   width: 800px;
   
 }
 
-.container {
-  margin-left: 300px;
-}
 
 .jumbotron {
   text-align:center
@@ -21,11 +19,12 @@ body {
 
 .pizzamaker{
   text-align: center;
-  background-color: white;
+  background-color: white
 }
 .sum-header{
   font-weight: bold;
   padding-left: 25px;
+  font-size: large;
 }
 #logo{
   text-align: center;
@@ -36,7 +35,10 @@ body {
   font-size: 30px;
   font-weight: bolder;
 }
-
+#sumbit-order {
+  text-align: center;
+  margin-top: 200px;
+}
 #thank-you{
   text-align: center;
   font-size: 25px;
